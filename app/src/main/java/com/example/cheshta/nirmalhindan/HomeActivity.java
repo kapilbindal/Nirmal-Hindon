@@ -14,6 +14,8 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = "HomeActivity";
+//    private static final int ACTIVITY_NUM = 0;
+
     ImageView ivCamera, ivLogout;
 
     @Override
@@ -45,5 +47,8 @@ public class HomeActivity extends AppCompatActivity {
         BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottomNavViewBar);
         BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
         BottomNavigationViewHelper.enableNavigation(HomeActivity.this, bottomNavigationViewEx);
+        /*Menu menu = bottomNavigationViewEx.getMenu();
+        MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
+        menuItem.setChecked(true);*/
     }
 }

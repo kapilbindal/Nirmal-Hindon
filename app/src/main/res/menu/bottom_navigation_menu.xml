@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--<item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+-->
     <item
         android:id="@+id/ic_aim"
         android:icon="@drawable/ic_aim"
-        android:title=""/>
+        android:title="Aim"/>
 
     <item
         android:id="@+id/ic_event"
         android:icon="@drawable/ic_event"
-        android:title=""/>
+        android:title="Event"/>
 
     <item
         android:id="@+id/ic_yojana"
         android:icon="@drawable/ic_yojana"
-        android:title=""/>
+        android:title="Yojana"/>
 
     <item
         android:id="@+id/ic_donation"
         android:icon="@drawable/ic_donation"
-        android:title=""/>
+        android:title="Donation"/>
 
     <item
         android:id="@+id/ic_feedback"
         android:icon="@drawable/ic_feedback"
-        android:title=""/>
+        android:title="Feedback"/>
 
 </menu>
