@@ -6,4 +6,7 @@
     <color name="lightBlue">#80b3ff</color>
     <color name="gradientBlue">#1a75ff</color>
     <color name="lightGreen"> #00cc00</color>
+
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#FFFF</color>
 </resources>

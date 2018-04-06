@@ -18,7 +18,18 @@
         </activity>
         <activity android:name=".LanguageActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".navigationActivities.AimActivity"
+            android:parentActivityName=".HomeActivity"></activity>
+        <activity android:name=".navigationActivities.EventActivity"
+            android:parentActivityName=".HomeActivity"></activity>
+        <activity android:name=".navigationActivities.YojanaActivity"
+            android:parentActivityName=".HomeActivity"></activity>
+        <activity android:name=".navigationActivities.DonationActivity"
+            android:parentActivityName=".HomeActivity"></activity>
+        <activity android:name=".navigationActivities.FeedbackActivity"
+            android:parentActivityName=".HomeActivity"></activity>
     </application>
 
 </manifest>
