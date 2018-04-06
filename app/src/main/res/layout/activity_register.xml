@@ -16,12 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
             android:visibility="gone">
             <Button
                 android:id="@+id/btnSuccess"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/button_success"
                 android:text="Verification Successfull"
@@ -54,12 +55,6 @@
                     android:inputType="phone"
                     />
             </android.support.design.widget.TextInputLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:text="Append '+COUTRY CODE' before number"
-                />
             <Button
                 android:id="@+id/btnSendOTP"
                 android:layout_width="200dp"
@@ -72,6 +67,12 @@
                 android:fontFamily="serif"
                 android:textSize="18sp"
                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Verify Mobile Number to set up account"
+                android:gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
@@ -115,6 +116,12 @@
                 android:fontFamily="serif"
                 android:textSize="18sp"
                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Verify Mobile Number to set up account"
+                android:gravity="center"/>
         </LinearLayout>
 
         <View
@@ -135,7 +142,14 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
             >
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:fontFamily="serif"
+                android:text="PROFILE"
+                android:gravity="center"
+                android:textColor="@color/gradientBlue"/>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,7 +206,7 @@
                 android:paddingLeft="20dp"
                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
                 <EditText
-                    android:id="@+id/edNewEmail"
+                    android:id="@+id/edOccupation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
