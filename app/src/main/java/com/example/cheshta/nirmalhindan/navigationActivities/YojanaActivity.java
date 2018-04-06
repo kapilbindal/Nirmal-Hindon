@@ -18,7 +18,7 @@ public class YojanaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_yojana);
 
         Log.d(TAG, "onCreate: Yojana");
 
