@@ -16,9 +16,52 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/ft1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="FEEDBACK"
+                android:textSize="30dp"
+                android:textColor="#ff0000"/>
+            <TextView
+                android:id="@+id/ft2"
+                android:layout_below="@+id/ft1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Enter your feedback here"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/fe1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ft2"
+                android:hint="SUBJECT"
+                android:layout_marginTop="10dp"
+                android:maxWidth="70dp"/>
+            <EditText
+                android:id="@+id/fe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fe1"
+                android:hint="BODY"
+                android:layout_marginTop="10dp"
+                android:maxWidth="70dp"/>
+            <Button
+                android:id="@+id/fb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_below="@+id/fe2"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:text="Back"
+                android:id="@+id/fb2"/>
 
         </RelativeLayout>
 

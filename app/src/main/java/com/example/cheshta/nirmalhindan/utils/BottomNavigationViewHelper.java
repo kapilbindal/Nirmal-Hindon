@@ -6,13 +6,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
-import com.example.cheshta.nirmalhindan.HomeActivity;
 import com.example.cheshta.nirmalhindan.R;
 import com.example.cheshta.nirmalhindan.navigationActivities.AimActivity;
 import com.example.cheshta.nirmalhindan.navigationActivities.DonationActivity;
 import com.example.cheshta.nirmalhindan.navigationActivities.EventActivity;
 import com.example.cheshta.nirmalhindan.navigationActivities.FeedbackActivity;
-import com.example.cheshta.nirmalhindan.navigationActivities.YojanaActivity;
+import com.example.cheshta.nirmalhindan.navigationActivities.YojnaActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 /**
@@ -49,7 +48,7 @@ public class BottomNavigationViewHelper {
                         context.startActivity(intent2);
                         break;
                     case R.id.ic_yojana:
-                        Intent intent3 = new Intent(context, YojanaActivity.class);
+                        Intent intent3 = new Intent(context, YojnaActivity.class);
                         context.startActivity(intent3);
                         break;
                     case R.id.ic_donation:
