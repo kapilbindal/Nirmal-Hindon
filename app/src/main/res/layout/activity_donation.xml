@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgrd"
     tools:context="com.example.cheshta.nirmalhindan.navigationActivities.DonationActivity">
 
     <RelativeLayout
@@ -15,74 +16,92 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:orientation="vertical">
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="NIRMAL HINDON"
-                   android:layout_gravity="center"
-                   android:textSize="50dp"
-                   android:layout_marginBottom="30dp"
-                   android:textColor="#ff0000"
-                   />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Bank Details"
-                   android:textSize="30dp"
-                   android:layout_marginBottom="10dp"
-                   android:textColor="#0000ff"/>
-               <android.support.design.widget.TextInputLayout
-                   android:id="@+id/bnameWrapper"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIRMAL HINDON"
+                    android:layout_gravity="center"
+                    android:textSize="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="#ff0000"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Details"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#0000ff"/>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/bnameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                   <EditText
-                       android:id="@+id/bname"
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:inputType="textEmailAddress"
-                       android:hint="Bank Name"/>
+                    <EditText
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/bname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Bank Name"/>
 
-               </android.support.design.widget.TextInputLayout>
-               <android.support.design.widget.TextInputLayout
-                   android:id="@+id/AccnoWrapper"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content">
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/AccnoWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                   <EditText
-                       android:id="@+id/AccNO"
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:inputType="textEmailAddress"
-                       android:hint="Account Numer"/>
+                    <EditText
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/AccNO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Account Numer"/>
 
-               </android.support.design.widget.TextInputLayout>
-               <android.support.design.widget.TextInputLayout
-                   android:id="@+id/IFSCWrapper"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content">
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/IFSCWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                   <EditText
-                       android:id="@+id/IFSC"
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:inputType="textEmailAddress"
-                       android:hint="IFSC_CODE"/>
+                    <EditText
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/IFSC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="IFSC_CODE"/>
 
-               </android.support.design.widget.TextInputLayout>
-               <Button
-                   android:id="@+id/b"
-                   android:layout_marginTop="50dp"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="BACK"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+
+                    android:id="@+id/b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#99ff99"
+                    android:text="Submit Response" />
+
+                <Button
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="#99ff99"
+                    android:layout_marginLeft="10dp"
+                    android:text="go BACK" />
 
 
-           </LinearLayout>
+            </LinearLayout>
 
         </RelativeLayout>
 
