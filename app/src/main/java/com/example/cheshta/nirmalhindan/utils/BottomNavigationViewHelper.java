@@ -27,6 +27,8 @@ public class BottomNavigationViewHelper {
         bottomNavigationViewEx.enableItemShiftingMode(false);
         bottomNavigationViewEx.enableShiftingMode(false);
         bottomNavigationViewEx.setTextVisibility(true);
+
+        bottomNavigationViewEx.setIconSize(30,30);
     }
 
     public static void enableNavigation(final Context context, BottomNavigationViewEx view){

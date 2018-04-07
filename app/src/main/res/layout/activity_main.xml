@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/tvHindi"
-        android:text="निर्मल हिंदन"
+        android:text="निर्मल हिंडन"
         android:textSize="40sp"
         android:textColor="#3333cc"
         android:textStyle="bold"
