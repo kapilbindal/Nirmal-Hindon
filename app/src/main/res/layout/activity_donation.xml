@@ -15,10 +15,74 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:text="DONATION"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="NIRMAL HINDON"
+                   android:layout_gravity="center"
+                   android:textSize="50dp"
+                   android:layout_marginBottom="30dp"
+                   android:textColor="#ff0000"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Bank Details"
+                   android:textSize="30dp"
+                   android:layout_marginBottom="10dp"
+                   android:textColor="#0000ff"/>
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/bnameWrapper"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/bname"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textEmailAddress"
+                       android:hint="Bank Name"/>
+
+               </android.support.design.widget.TextInputLayout>
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/AccnoWrapper"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/AccNO"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textEmailAddress"
+                       android:hint="Account Numer"/>
+
+               </android.support.design.widget.TextInputLayout>
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/IFSCWrapper"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/IFSC"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textEmailAddress"
+                       android:hint="IFSC_CODE"/>
+
+               </android.support.design.widget.TextInputLayout>
+               <Button
+                   android:id="@+id/b"
+                   android:layout_marginTop="50dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="BACK"/>
+
+
+           </LinearLayout>
 
         </RelativeLayout>
 

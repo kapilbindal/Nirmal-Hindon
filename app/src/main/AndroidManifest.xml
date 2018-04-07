@@ -23,9 +23,13 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".navigationActivities.AimActivity"
             android:parentActivityName=".HomeActivity"></activity>
+        <activity android:name=".navigationActivities.FutureEventActivity"
+            android:parentActivityName=".navigationActivities.EventActivity"></activity>
+        <activity android:name=".navigationActivities.CurrentEventActivity"
+            android:parentActivityName=".navigationActivities.EventActivity"></activity>
         <activity android:name=".navigationActivities.EventActivity"
             android:parentActivityName=".HomeActivity"></activity>
-        <activity android:name=".navigationActivities.YojanaActivity"
+        <activity android:name=".navigationActivities.YojnaActivity"
             android:parentActivityName=".HomeActivity"></activity>
         <activity android:name=".navigationActivities.DonationActivity"
             android:parentActivityName=".HomeActivity"></activity>
