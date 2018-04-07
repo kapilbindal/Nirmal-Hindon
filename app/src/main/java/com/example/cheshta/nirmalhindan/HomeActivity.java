@@ -1,5 +1,6 @@
 package com.example.cheshta.nirmalhindan;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,11 +8,13 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.cheshta.nirmalhindan.utils.BottomNavigationViewHelper;
+import com.google.firebase.auth.FirebaseAuth;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = "HomeActivity";
+    FirebaseAuth mAuth;
 //    private static final int ACTIVITY_NUM = 0;
 
     ImageView ivCamera, ivLogout;
@@ -20,6 +23,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        mAuth = FirebaseAuth.getInstance();
 
         ivCamera = findViewById(R.id.ivCamera);
         ivLogout = findViewById(R.id.ivLogout);
@@ -36,7 +41,8 @@ public class HomeActivity extends AppCompatActivity {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HomeActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+                mAuth.signOut();
+                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
             }
         });
     }
