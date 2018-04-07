@@ -11,11 +11,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginRight="20dp">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="PLAY NIRMAL MUSIC"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+            android:textColor="@color/gradientBlue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnMusicPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/music_play"/>
+            <Button
+                android:id="@+id/btnMusicPause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/music_pause"/>
+            <Button
+                android:id="@+id/btnMusicStop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/music_stop"/>
+        </LinearLayout>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="50dp"
             android:paddingLeft="20dp"
             app:hintTextAppearance="@style/TextAppearance.AppCompat">
             <EditText
@@ -23,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:hint="Registered Mobile Number"
+                android:hint="Registered Mobile Number(with +91)"
                 android:inputType="textEmailAddress"
                 />
         </android.support.design.widget.TextInputLayout>
