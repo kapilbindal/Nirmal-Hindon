@@ -54,20 +54,22 @@
                 android:inputType="textEmailAddress"
                 />
         </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="20dp">
-            <EditText
-                android:id="@+id/edPassword"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:hint="Password"
-                android:inputType="textPassword"
-                />
-        </android.support.design.widget.TextInputLayout>
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/gradientBlue"
+                android:paddingLeft="20dp">
+                <EditText
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    />
+            </android.support.design.widget.TextInputLayout>
         <TextView
             android:id="@+id/tvForgotPassword"
             android:layout_width="wrap_content"
@@ -119,7 +121,7 @@
             android:layout_gravity="center"
             android:background="@drawable/button_create"
             android:text="Create New Account"
-            android:textColor="@color/gradientBlue"
+            android:textColor="@color/lightBlue"
             android:fontFamily="serif"
             android:textSize="16sp"
             />

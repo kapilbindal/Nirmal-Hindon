@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnLogin,btnCreate,btnMusicPlay,btnMusicPause,btnMusicStop;
+    Button btnLogin,btnCreate,btnMusicPlay,btnMusicPause,btnMusicStop,btnShowPassword,btnHidePassword;
     EditText edMobNum,edPassword;
     TextView tvForgotPassword;
     private FirebaseAuth mAuth;
