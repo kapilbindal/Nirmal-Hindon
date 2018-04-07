@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/backgrd"
     tools:context="com.example.cheshta.nirmalhindan.navigationActivities.FeedbackActivity">
 
     <RelativeLayout
@@ -16,6 +18,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:layout_marginTop="5dp"
                 android:id="@+id/ft1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,6 +27,7 @@
                 android:textSize="30dp"
                 android:textColor="#ff0000"/>
             <TextView
+                android:layout_marginLeft="5dp"
                 android:id="@+id/ft2"
                 android:layout_below="@+id/ft1"
                 android:layout_width="wrap_content"
@@ -32,6 +36,7 @@
                 android:layout_marginTop="30dp"
                 android:textSize="20dp"/>
             <EditText
+                android:layout_marginLeft="5dp"
                 android:id="@+id/fe1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,6 +45,7 @@
                 android:layout_marginTop="10dp"
                 android:maxWidth="70dp"/>
             <EditText
+                android:layout_marginLeft="5dp"
                 android:id="@+id/fe2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,21 +53,31 @@
                 android:hint="BODY"
                 android:layout_marginTop="10dp"
                 android:maxWidth="70dp"/>
+
             <Button
+
                 android:id="@+id/fb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Submit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/fe2"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="32dp"
+                android:background="#99ff99"
+                android:text="Click here to Submit" />
 
             <Button
+                android:id="@+id/fb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fb1"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="11dp"
-                android:text="Back"
-                android:id="@+id/fb2"/>
+                android:layout_alignStart="@+id/fb1"
+                android:layout_marginBottom="60dp"
+                android:background="#99ff99"
+                android:text="go Back" />
 
         </RelativeLayout>
 

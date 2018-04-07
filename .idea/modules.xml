@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Nirmal-Hindon.iml" filepath="$PROJECT_DIR$/Nirmal-Hindon.iml" />
       <module fileurl="file://C:\Users\chesh\AndroidStudioProjects\NirmalHindan\Nirmal-Hindon.iml" filepath="C:\Users\chesh\AndroidStudioProjects\NirmalHindan\Nirmal-Hindon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/NirmalHindan.iml" filepath="$PROJECT_DIR$/NirmalHindan.iml" />
       <module fileurl="file://C:\Users\KAPIL\AndroidStudioProjects\Nirmal-Hindon\NirmalHindan.iml" filepath="C:\Users\KAPIL\AndroidStudioProjects\Nirmal-Hindon\NirmalHindan.iml" />
+      <module fileurl="file://C:\Users\tushm\Nirmal-Hindon\NirmalHindan.iml" filepath="C:\Users\tushm\Nirmal-Hindon\NirmalHindan.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\KAPIL\AndroidStudioProjects\Nirmal-Hindon\app\app.iml" filepath="C:\Users\KAPIL\AndroidStudioProjects\Nirmal-Hindon\app\app.iml" />
     </modules>

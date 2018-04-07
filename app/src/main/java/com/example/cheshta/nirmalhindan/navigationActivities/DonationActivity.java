@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.cheshta.nirmalhindan.HomeActivity;
 import com.example.cheshta.nirmalhindan.R;
@@ -23,7 +24,16 @@ public class DonationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donation);
-        Button b;
+        Button b,b1;
+        b1=findViewById(R.id.b1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DonationActivity.this, "Thank You for the donation", Toast.LENGTH_SHORT).show();
+                Intent i=new Intent(DonationActivity.this,HomeActivity.class);
+                startActivity(i);
+            }
+        });
         b=findViewById(R.id.b);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
