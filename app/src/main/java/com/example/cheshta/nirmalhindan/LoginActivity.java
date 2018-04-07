@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         edPassword = findViewById(R.id.edPassword);
         tvForgotPassword = findViewById(R.id.tvForgotPassword);
 
-        mobNumberLogin = "+91".concat(edMobNum.getText().toString());
+        //mobNumberLogin = "+91".concat(edMobNum.getText().toString());
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(!edMobNum.getText().toString().isEmpty() && !edPassword.getText().toString().isEmpty()){
                     progressDialog.show();
-                    mAuth.signInWithEmailAndPassword(mobNumberLogin.concat("@nirmal.com"),edPassword.getText().toString())
+                    mAuth.signInWithEmailAndPassword(edMobNum.getText().toString().concat("@nirmal.com"),edPassword.getText().toString())
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
             }
         });
 

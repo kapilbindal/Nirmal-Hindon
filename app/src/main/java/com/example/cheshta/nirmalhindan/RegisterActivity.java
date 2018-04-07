@@ -83,7 +83,7 @@ public class RegisterActivity extends AppCompatActivity { FirebaseAuth mAuth;
 
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-                Toast.makeText(RegisterActivity.this, "Verification Completed!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(RegisterActivity.this, "Verification Completed!", Toast.LENGTH_SHORT).show();
                 signInWithPhoneAuthCredential(phoneAuthCredential);
             }
 
@@ -161,7 +161,7 @@ public class RegisterActivity extends AppCompatActivity { FirebaseAuth mAuth;
                                             }
                                         });
                                     } else {
-                                        Toast.makeText(RegisterActivity.this, "The mobile number is already in use by another account.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(RegisterActivity.this,task.getException().getLocalizedMessage() , Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
